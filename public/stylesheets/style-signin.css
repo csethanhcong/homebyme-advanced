@@ -6,6 +6,16 @@
 	 margin: 0 auto;
 	 font-family: "Trebuchet MS","Myriad Pro",Arial,sans-serif;
 }
+.codrops-top{
+	line-height: 30px;
+	font-size: 20px;
+	color: white;
+	background: rgba(255, 56, 56, 0.7);
+	text-transform: uppercase;
+	z-index: 9999;
+	position: relative;
+	box-shadow: 1px 0px 2px rgba(0,0,0,0.2);
+}
 
 /** fonts used for the icons **/ 
 @font-face {
@@ -404,4 +414,8 @@ p.change_link{
 	position: absolute;
 	height: 90px;
 	background: transparent;
+}
+
+.alert{
+
 }

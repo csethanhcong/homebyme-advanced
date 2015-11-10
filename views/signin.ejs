@@ -14,11 +14,13 @@
 		<link rel="stylesheet" type="text/css" href="./stylesheets/animate-custom.css" />
     </head>
     <body>
-        <div class="alert alert-danger">
-            <strong>FAILED!</strong>
-            <p><%= message %></p>
-        </div>
         <div class="container">
+            <div class="codrops-top">
+                <div class="alert alert-danger">
+                    <strong>FAILED!</strong><%= message %>
+                </div>
+                <div class="clr"></div>
+            </div>
             <header>
                 <h1><span>Let's Get Started</span></h1>
                 <h2>This will be an amazing experiment...</h2>
@@ -104,7 +106,6 @@
                 </div>  
             </section>
         </div>
-        <p class=""><%= message %></p>
     </body>
 </html>
 		
