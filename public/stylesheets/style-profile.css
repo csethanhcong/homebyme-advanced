@@ -153,92 +153,6 @@ input {
 	width: 30px;
 }
 
-/*login with facebook or google*/
-#wrapper input.fblogin{
-	position: relative;
-	width: 30px;
-	height: 30px;
-	background: url(../../fb.png) no-repeat;
-	padding: 0px;
-}
-#wrapper input.gglogin{
-	position: relative;
-	width: 30px;
-	height: 30px;
-	background: url(../../gg.png) no-repeat;
-	padding: 0px;
-}
-#wrapper input.twlogin{
-	position: relative;
-	width: 30px;
-	height: 30px;
-	background: url(../../tw.png) no-repeat;
-	padding: 0px;
-}
-/*styling both submit buttons */
-#cancelbtn{
-	background: rgb(193, 49, 49);
-	margin-left: 74px;
-}
-#cancelbtn:hover{
-	background: rgb(255, 49, 49);
-}
-#submitbtn{
-	background: rgb(0, 193, 49);
-	margin-left: 40px;
-}
-#submitbtn:hover{
-	background: rgb(28, 255, 85);
-}
-#wrapper p.button input{
-	width: 30%;
-	margin-top: 20px;
-	padding: 0px;
-	cursor: pointer;	
-	padding: 8px 5px;
-	font-family: 'BebasNeueRegular','Arial Narrow',Arial,sans-serif;
-	color: #fff;
-	font-size: 24px;	
-	border: 1px solid rgb(0, 100, 0);	
-	margin-bottom: 10px;	
-	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
-	-webkit-border-radius: 0px;
-	   -moz-border-radius: 0px;
-	        border-radius: 0px;	
-	/*-webkit-box-shadow: 0px 1px 6px 4px rgba(0, 0, 0, 0.07) inset,
-	        0px 0px 0px 3px rgb(254, 254, 254),
-	        0px 5px 3px 3px rgb(210, 210, 210);
-	   -moz-box-shadow:0px 1px 6px 4px rgba(0, 0, 0, 0.07) inset,
-	        0px 0px 0px 3px rgb(254, 254, 254),
-	        0px 5px 3px 3px rgb(210, 210, 210);
-	        box-shadow:0px 1px 6px 4px rgba(0, 0, 0, 0.07) inset,
-	        0px 0px 0px 3px rgb(254, 254, 254),
-	        0px 5px 3px 3px rgb(210, 210, 210);
-	-webkit-transition: all 0.2s linear;
-	   -moz-transition: all 0.2s linear;
-	     -o-transition: all 0.2s linear;
-	        transition: all 0.2s linear;*/
-}/*
-#wrapper p.button input:hover{
-	background: rgb(28, 255, 85);
-}*/
-#wrapper p.button input:active,
-#wrapper p.button input:focus{
-	background: rgb(40, 137, 154);
-	position: relative;
-	top: 1px;
-	border: 1px solid rgb(12, 76, 87);	
-	-webkit-box-shadow: 0px 1px 6px 4px rgba(0, 0, 0, 0.2) inset;
-	   -moz-box-shadow: 0px 1px 6px 4px rgba(0, 0, 0, 0.2) inset;
-	        box-shadow: 0px 1px 6px 4px rgba(0, 0, 0, 0.2) inset;
-}/*
-p.login.button,
-p.signin.button{
-	text-align: right;
-	margin: 5px 0;
-}*/
-
-
 /* styling the checkbox "keep me logged in"*/
 .keeplogin{
 	margin-top: -5px;
@@ -256,7 +170,6 @@ p.signin.button{
 	width: 80%;
 }
 
-
 /*styling the links to change from one form to another */
 
 p.change_link{
@@ -267,45 +180,38 @@ p.change_link{
 	width: 440px;
 	padding: 17px 30px 20px 30px;
 	font-size: 16px	;
-	text-align: right;
+	text-align: center;
 	border-top: 1px solid rgb(219, 229, 232);
 	-webkit-border-radius: 0 0  5px 5px;
 	   -moz-border-radius: 0 0  5px 5px;
 	        border-radius: 0 0  5px 5px;
-	background: rgb(225, 234, 235);
-	background: -moz-repeating-linear-gradient(-45deg, 
-	rgb(247, 247, 247) , 
-	rgb(247, 247, 247) 15px, 
-	rgb(225, 234, 235) 15px, 
-	rgb(225, 234, 235) 30px, 
-	rgb(247, 247, 247) 30px
-	);
-	background: -webkit-repeating-linear-gradient(-45deg, 
-	rgb(247, 247, 247) , 
-	rgb(247, 247, 247) 15px, 
-	rgb(225, 234, 235) 15px, 
-	rgb(225, 234, 235) 30px, 
-	rgb(247, 247, 247) 30px
-	);
-	background: -o-repeating-linear-gradient(-45deg, 
-	rgb(247, 247, 247) , 
-	rgb(247, 247, 247) 15px, 
-	rgb(225, 234, 235) 15px, 
-	rgb(225, 234, 235) 30px, 
-	rgb(247, 247, 247) 30px
-	);
-	background: repeating-linear-gradient(-45deg, 
-	rgb(247, 247, 247) , 
-	rgb(247, 247, 247) 15px, 
-	rgb(225, 234, 235) 15px, 
-	rgb(225, 234, 235) 30px, 
-	rgb(247, 247, 247) 30px
-	);
+}
+#wrapper p.change_link a.submitbtn{
+	background: rgb(0, 193, 49);
+	color: rgb(240, 240, 240);
+	padding: 11px 50px 7px 50px;
+	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+	margin-right: 50px;
+	font-size: 24px;
+	font-family: 'BebasNeueRegular';
+}
+#wrapper p.change_link a.cancelbtn{
+	background: rgb(193, 49, 49);
+	font-size: 24px;
+	font-family: 'BebasNeueRegular';
+	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+	color: rgb(240, 240, 240);
+	padding: 11px 50px 7px 50px;
+}
+#wrapper p.change_link a.submitbtn:hover{
+	color: rgb(240, 240, 240);
+	background: rgb(28, 255, 85);
+}
+#wrapper p.change_link a.cancelbtn:hover{
+	color: rgb(240, 240, 240);
+	background: rgb(250, 49, 49);
 }
 #wrapper p.change_link a {
-	display: inline-block;
-	font-weight: bold;
-	background: rgb(247, 248, 241);
 	padding: 2px 6px;
 	color: rgb(0, 220, 0);
 	margin-left: 10px;
@@ -319,11 +225,6 @@ p.change_link{
 	-o-transition: all 0.4s linear;
 	-ms-transition: all 0.4s  linear;
 	transition: all 0.4s  linear;
-}
-#wrapper p.change_link a:hover {
-	color: rgb(77, 254, 46);
-	background: rgb(247, 247, 247);
-	border: 1px solid rgb(0, 220, 0);
 }
 #wrapper p.change_link a:active{
 	position: relative;
