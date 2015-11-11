@@ -31,7 +31,7 @@ module.exports = function(passport){
                                 throw err;  
                             }
                             console.log('Edit Information succesful');    
-                            return done(null, newUser);
+                            return done(null, user);
                         });
                     }
                 });
