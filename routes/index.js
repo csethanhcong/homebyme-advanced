@@ -47,12 +47,24 @@ module.exports = function(passport){
 		res.render('design', { message: req.flash('message') });
 	});
 
+
+	/* GET Edit page */
+	router.get('/edit', isAuthenticated, function(req, res) {
+		res.render('edit', { message: req.flash('message') });
+	});
+
+	/* Handle POST Edit */
+	router.post('/edit', passport.authenticate('edit', {
+		successRedirect : '/design',
+		failureRedirect : '/edit',
+		failureFlash : true
+	}));
+
 	/* Handle Logout */
 	router.get('/signout', function(req, res) {
 		req.logout();
 		res.redirect('/');
 	});
-
 	return router;
 }
 

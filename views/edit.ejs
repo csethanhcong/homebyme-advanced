@@ -7,10 +7,10 @@
         <meta name="description" content="Login and Registration Form with HTML5 and CSS3" />
         <meta name="keywords" content="html5, css3, form, switch, animation, :target, pseudo-class" />
         <meta name="author" content="Codrops" />
-        <link rel="shortcut icon" href="../favicon.ico"> 
-        <link rel="stylesheet" type="text/css" href="css/demo.css" />
-        <link rel="stylesheet" type="text/css" href="css/style.css" />
-		<link rel="stylesheet" type="text/css" href="css/animate-custom.css" />
+        <link rel="shortcut icon" href="./images/images/icon.ico"> 
+        <link rel="stylesheet" type="text/css" href="./stylesheets/demo.css" />
+        <!-- <link rel="stylesheet" type="text/css" href="css/style.css" /> -->
+		<link rel="stylesheet" type="text/css" href="./stylesheets/animate-custom.css" />
     </head>
     <body>
         <div class="container">
@@ -24,15 +24,15 @@
                         <div class="ribbon"></div> 
                         <div class="decor"></div>
                         <div class="avatar">
-                            <img src="./images/user.png" class="img-rounded img-responsive" width="100px" height="100px"/>
+                            <img src="../images/images/user.png" class="img-rounded img-responsive" width="100px" height="100px"/>
                         </div>
                         <div id="login" class="animate form">
-                            <form  action="mysuperscript.php" autocomplete="on">
+                            <form  action="/edit" method="POST" autocomplete="on">
                                 <br/><br/><br/><br/>
                                 <h1>Profile</h1> 
                                 <p> 
                                     <label for="email" class="email" data-icon="e" > Your email</label>
-                                    <input id="email" name="email" type="email" /> 
+                                    <input id="email" name="username" type="email" /> 
                                 </p>
                                 <p> 
                                     <label for="password" class="password" data-icon="p">Your password</label>
@@ -48,7 +48,7 @@
                                 </p>
                                 <p> 
                                     <label for="addr" class="addr" data-icon="u"> Your address </label>
-                                    <input id="addr" name="addr" type="text"/>
+                                    <input id="addr" name="address" type="text"/>
                                 </p>
                                 <p class="signin button"> 
                                     <input id="submitbtn" type="submit" value="Submit"/> 
