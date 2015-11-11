@@ -20,15 +20,15 @@ module.exports = function(passport){
 	});
 	
 	/* Handle POST Login */
-	router.post('/login', passport.authenticate('login', {
+	router.post('/signin', passport.authenticate('signin', {
 		successRedirect : '/design',
-		failureRedirect : '/login',
+		failureRedirect : '/signin',
 		failureFlash : true
 	}));
 
 	/* GET Login page */
-	router.get('/login', function(req, res) {
-		res.render('login', { message: req.flash('message') });
+	router.get('/signin', function(req, res) {
+		res.render('signin', { message: req.flash('message') });
 	});
 	/* Handle POST Sign-up */
 	router.post('/signup', passport.authenticate('signup', {
