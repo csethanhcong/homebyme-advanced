@@ -30,17 +30,17 @@ module.exports = function(passport){
 	router.get('/signin', function(req, res) {
 		res.render('signin', { message: req.flash('message') });
 	});
-	/* Handle POST Sign-up */
-	router.post('/signup', passport.authenticate('signup', {
-		successRedirect : '/design',
-		failureRedirect : '/signup',
-		failureFlash : true
-	}));
+	// /* Handle POST Sign-up */
+	// router.post('/signup', passport.authenticate('signup', {
+	//	successRedirect : '/design',
+	// 	failureRedirect : '/signup',
+	// 	failureFlash : true
+	// }));
 
-	/* GET Sign-up page */
-	router.get('/signup', function(req, res) {
-		res.render('signup', { message: req.flash('message') });
-	});
+	// /* GET Sign-up page */
+	// router.get('/signup', function(req, res) {
+	// 	res.render('signup', { message: req.flash('message') });
+	// });
 
 	/* GET Design page */
 	router.get('/design', isAuthenticated, function(req, res) {
