@@ -99,3 +99,12 @@ footer {
   color: grey;
   font-size: 100%;
 }
+
+.navbar-brand {
+    font-family: "Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive;
+    color: #fed136;
+}
+
+.navbar-default .navbar-brand:hover {
+    color: #fec503;
+}
