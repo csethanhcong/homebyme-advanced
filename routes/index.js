@@ -44,13 +44,19 @@ module.exports = function(passport){
 
 	/* GET Design page */
 	router.get('/design', isAuthenticated, function(req, res) {
-		res.render('design', { message: req.flash('message') });
+		res.render('design', { 
+			message: req.flash('message')
+			// user: req.user
+		});
 	});
 
 
 	/* GET Edit page */
 	router.get('/edit', isAuthenticated, function(req, res) {
-		res.render('edit', { message: req.flash('message') });
+		res.render('edit', { 
+			message: req.flash('message'),
+			user: passport.user
+		});
 	});
 
 	/* Handle POST Edit */
