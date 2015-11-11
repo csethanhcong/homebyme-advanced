@@ -45,8 +45,8 @@ module.exports = function(passport){
 	/* GET Design page */
 	router.get('/design', isAuthenticated, function(req, res) {
 		res.render('design', { 
-			message: req.flash('message')
-			// user: req.user
+			message: req.flash('message'),
+			user: req.user
 		});
 	});
 
@@ -55,7 +55,7 @@ module.exports = function(passport){
 	router.get('/edit', isAuthenticated, function(req, res) {
 		res.render('edit', { 
 			message: req.flash('message'),
-			user: passport.user
+			user: req.user
 		});
 	});
 
