@@ -157,21 +157,21 @@ input {
 	position: relative;
 	width: 30px;
 	height: 30px;
-	background: url(../../fb.png) no-repeat;
+	background: url(../images/images/fb.png) no-repeat;
 	padding: 0px;
 }
 #wrapper input.gglogin{
 	position: relative;
 	width: 30px;
 	height: 30px;
-	background: url(../../gg.png) no-repeat;
+	background: url(../images/images/gg.png) no-repeat;
 	padding: 0px;
 }
 #wrapper input.twlogin{
 	position: relative;
 	width: 30px;
 	height: 30px;
-	background: url(../../tw.png) no-repeat;
+	background: url(../images/images/tw.png) no-repeat;
 	padding: 0px;
 }
 /*styling both submit buttons */
