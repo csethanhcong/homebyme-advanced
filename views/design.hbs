@@ -292,6 +292,7 @@
 <script src="./javascripts/jquery-ui.min.js"></script>
 <script src="./javascripts/jquery-rotate.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="./javascripts/html2canvas.js"></script>
 <script type="text/javascript">
 	$(function() {
 		/*Tooltip init*/
@@ -612,6 +613,14 @@
 			downloadLink1.innerHTML = "Download File";
 			downloadLink1.href = window.URL.createObjectURL(summaryFile);
 			downloadLink1.click();
+
+			var ws = $('#working-space');
+			html2canvas(ws, {
+				onrendered : function(canvas) {
+					var img = canvas.toDataURL();
+					window.open(img);
+				}
+			});
 		});
 
 		$('#btn-choose').on('change',function(event){
@@ -629,10 +638,6 @@
 		        })(f);
 		        reader.readAsText(f);
 			}
-		});
-
-		$('#homepage').click(function(event) {
-			window.location = 'HomeDesign.html';
 		});
 	});
 </script>
