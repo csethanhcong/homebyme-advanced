@@ -163,7 +163,7 @@ input {
 }
 
 /*login with facebook or google*/
-#wrapper input.fblogin{
+#wrapper a.fblogin{
 	position: relative;
 	width: 30px;
 	height: 30px;

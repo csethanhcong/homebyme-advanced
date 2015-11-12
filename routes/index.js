@@ -19,6 +19,20 @@ module.exports = function(passport){
 		res.render('index', { message: req.flash('message') });
 	});
 	
+	// route for facebook authentication and signin
+	// different scopes while logging in
+	router.get('/signin/facebook', 
+		passport.authenticate('facebook', { scope : 'email' }
+	));
+
+	// handle the callback after facebook has authenticated the user
+	router.get('/signin/facebook/callback',
+		passport.authenticate('facebook', {
+			successRedirect : '/design',
+			failureRedirect : '/signin'
+		})
+	);
+
 	/* Handle POST Login */
 	router.post('/signin', passport.authenticate('signin', {
 		successRedirect : '/design',
