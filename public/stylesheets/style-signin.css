@@ -166,24 +166,22 @@ input {
 #wrapper p.exbutton a{
 	position: relative;
 	display: inline-block;
+	top: 10px;
 	width: 30px;
 	height: 30px;
+	padding: 0px;
+}
+#wrapper p.exbutton a.fblogin{
 	background: url(../images/images/fb.png) no-repeat;
-	padding: 0px;
 }
-#wrapper input.gglogin{
-	position: relative;
-	width: 30px;
-	height: 30px;
+#wrapper p.exbutton a.gglogin{
 	background: url(../images/images/gg.png) no-repeat;
-	padding: 0px;
 }
-#wrapper input.twlogin{
-	position: relative;
-	width: 30px;
-	height: 30px;
+#wrapper p.exbutton a.twlogin{
 	background: url(../images/images/tw.png) no-repeat;
-	padding: 0px;
+}
+#wrapper p.exbutton a.inlogin{
+	background: url(../images/images/in.png) no-repeat;
 }
 /*styling both submit buttons */
 #wrapper p.button input{
