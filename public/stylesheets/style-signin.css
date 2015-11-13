@@ -163,8 +163,9 @@ input {
 }
 
 /*login with facebook or google*/
-#wrapper p.fblogin a{
+#wrapper p.exbutton a{
 	position: relative;
+	display: inline-block;
 	width: 30px;
 	height: 30px;
 	background: url(../images/images/fb.png) no-repeat;
