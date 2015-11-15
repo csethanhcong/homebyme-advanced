@@ -1,0 +1,6 @@
+User-agent : *
+Disallow : /bin
+Disallow : /models
+Disallow : /passport
+Disallow : /public
+Disallow : /routes
